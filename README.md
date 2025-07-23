@@ -12,3 +12,7 @@ The goal of this project is to learn and apply the core concepts of Terminal, Ba
 - **Editor:** nano
 - **Version Control:** Git
 - **Platform:** GitHub
+
+## Course Progress
+
+- [x] Spiral 0: Repository Setup
