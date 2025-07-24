@@ -16,3 +16,4 @@ The goal of this project is to learn and apply the core concepts of Terminal, Ba
 ## Course Progress
 
 - [x] Spiral 0: Repository Setup
+- [ ] Spiral 1: Terminal & Bash Fundamentals
