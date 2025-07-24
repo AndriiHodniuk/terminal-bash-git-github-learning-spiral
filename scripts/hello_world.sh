@@ -1,12 +1,15 @@
 #!/bin/bash
 
-# This script greets the user personally.
+# Check if the correct number of arguments was provided.
+# We expect exactly 2 arguments.
 
-# Prompt the user for their name
-echo "What is your name?"
+if [ "$#" -ne 2 ]; then
+    echo "Error: Incorrect number of arguments." >&2
+    echo "Usage: $0 <name> <city>" >&2
+    exit 1
+fi
 
-# Read the user's input and store it in a variable called NAME
-read NAME
+NAME=$1
+CITY=$2
 
-# Print the personalized greeting
-echo "Hello, $NAME! Welcome to the world of Bash scripting."
+echo "Hello, $NAME from $CITY!"
