@@ -19,3 +19,7 @@ pnpm-debug.log*
 .env.development.local
 .env.test.local
 .env.production.local
+
+# Test files
+scripts/test_file.txt
+scripts/backup
