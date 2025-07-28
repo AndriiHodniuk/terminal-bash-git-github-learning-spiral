@@ -35,8 +35,9 @@ main() {
 
     for FILE_PATH in "$TARGET_DIR"/*; do
         if [ -f "$FILE_PATH" ]; then
-            local FILENAME=$(basename "$FILE_PATH")
-            mv "$FILE_PATH" "$TARGET_DIR/$PREFIX"_"$FILENAME"
+            local FILENAME
+            FILENAME=$(basename "$FILE_PATH")
+            mv "$FILE_PATH" "$TARGET_DIR/$PREFIX_$FILENAME"
             echo "Renamed '$FILENAME' to '$PREFIX'_'$FILENAME'"  
         fi
     done
