@@ -5,3 +5,5 @@
 echo "User: $(whoami)"
 
 echo "Uptime: $(uptime -p)"
+
+echo "OS Type: $(uname)"
