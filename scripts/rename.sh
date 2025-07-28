@@ -13,6 +13,11 @@ if [ ! -d "$TARGET_DIR" ]; then
     exit 1
 fi
 
+if [ -z "$(ls -A "$TARGET_DIR")" ]; then
+    echo "Info: Directory '$TARGET_DIR' is empty. Nothing to rename."
+    exit 0 
+fi
+
 for FILE_PATH in "$TARGET_DIR"/*; do
     if [ -f "$FILE_PATH" ]; then
         FILENAME=$(basename "$FILE_PATH")
