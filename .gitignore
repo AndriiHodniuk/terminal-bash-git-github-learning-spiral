@@ -23,3 +23,4 @@ pnpm-debug.log*
 # Test files
 scripts/test_file.txt
 scripts/backup
+scripts/test_folder
