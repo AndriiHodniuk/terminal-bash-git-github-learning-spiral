@@ -7,3 +7,6 @@ echo "User: $(whoami)"
 echo "Uptime: $(uptime -p)"
 
 echo "OS Type: $(uname)"
+
+echo "Kernel: $(uname -r)"
+
