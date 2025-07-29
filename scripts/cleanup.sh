@@ -7,7 +7,7 @@ main() {
 
    if [ "$#" -ne 2 ]; then
        echo "Error: Incorrect number of arguments." >&2
-       echo "Usage: "$0" <directory_path> <days>" >&2
+       echo "Usage: $0 <directory_path> <days>" >&2
        exit 1
    fi
 
@@ -36,13 +36,14 @@ main() {
        echo "$file"
    done
    echo "--------------------------------------"
-   read -p "Do you want to delete these files? (y/N)" answer
+   read -r -p "Do you want to delete these files? (y/N)" answer
 
-   if [[ "$answer" == "y" || "$answer" = "Y" ]]; then
+   if [ "$answer" == "y" ] || [ "$answer" = "Y" ]; then
        for file in "${files[@]}"; do
            rm "$file"
        done
        echo "Files was deleted."
+   fi
 }
 
 main "$@"
