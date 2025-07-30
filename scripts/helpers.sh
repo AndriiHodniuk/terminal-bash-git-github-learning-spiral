@@ -7,4 +7,4 @@ print_timestamp() {
 
 get_random_number() {
     echo $RANDOM
-}o
+}
