@@ -17,4 +17,6 @@ The goal of this project is to learn and apply the core concepts of Terminal, Ba
 
 - [x] Spiral 0: Repository Setup
 - [x] Spiral 1: Terminal & Bash Fundamentals
-- [ ] Spiral 2: Intermediate Git & Bash Scripting
+- [x] Spiral 2: Intermediate Git & Bash Scripting
+- [x] Spiral 3: Advanced Command-Line Tools
+- [ ] Spiral 4: DevOps & Automation Fundamentals
