@@ -6,8 +6,13 @@ on:
 
 jobs:
   shellcheck:
-    name: Run ShellCheck Linter
-    runs-on: ubuntu-latest
+    name: Run ShellCheck on ${{ matrix.os }}
+    strategy:
+      matrix:
+          os: [ubuntu-latest, macos-latest]
+
+    runs-on: ${{ matrix.os }}
+    
     steps:
       - name: Check out repositiry
         uses: actions/checkout@v4
